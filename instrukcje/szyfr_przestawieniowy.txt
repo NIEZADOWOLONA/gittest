@@ -1,0 +1,31 @@
+TO BE OR NOT TO BE THAT IS THE QUESTION
+
+TOBEORNOTTOBETHATISTHEQUESTION
+
+klucz = 6
+
+TOBEOR
+NOTTOB
+ETHATI
+STHEQU
+ESTION
+
+szyfrogram powstaje przez spisanie liter kolumnami:
+
+TNESEOOTTSBTHHTETAEIOOTQORBIUN
+
+TN ES EO OTT SB TH HTET AE IOO TQORBIUN
+
+napisz program w dowolnym języku realizuje szyfrowanie przestawieniowe
+
+1.pobierz tekst
+2.usuń białe znaki
+3.pobierz klucz
+4.podziel tekst na części długości klucza
+#obcjonalnie
+5.a)zapisz części jedna pod drugą (tablica)
+  b)t + 6 i odczytaj (pętla)
+  	w pętli odczytuj literyna kolejnych wielokrotności klucza
+6. wydrukuj zaszyfrowany tekst
+
+NA ZA TYDZIEŃ !
