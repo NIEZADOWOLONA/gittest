@@ -1,0 +1,162 @@
+Sieć
+====
+Created piątek 13 styczeń 2017
+
+LAN - Local Area Network - sieć komputerowa łącząca komputery na określonym obszarze takim jak blok, szkoła, laboratorium, czy też biuro. Sieć LAN może być wydzielona zarówno fizycznie, jak i logicznie w ramach innej sieci.
+
+Topologia magistrali (topologia szynowa, ang. bus) – jedna z topologii fizycznych sieci komputerowych charakteryzująca się tym, że wszystkie elementy sieci są podłączone do jednej magistrali (zazwyczaj w postaci kabla koncentrycznego).
+
+Topolopologia magistrali → Topologia gwiazdy
+
+Topologia gwiazdy (ang. star network) – sposób połączenia komputerów w sieci komputerowej, charakteryzujący się tym, że kable sieciowe połączone są w jednym wspólnym punkcie, zwanym punktem dostępu (ang. access point), w którym znajduje się koncentrator lub przełącznik.
+
+Rolę takiego punktu nazywamy haby - koncentratow swith łączy segmenty sieci komputerowej
+
+Host - dowolna maszyna (komputer, karta sieciowa, modem itp.) uczestnicząca w wymianie danych lub udostępniająca usługi sieciowe poprzez sieć komputerową za pomocą protokołu komunikacyjnego TCP/IP oraz posiadająca własny adres IP.
+
+Model komunikacji między Hostami a serwerami → host jest klijentem serwera
+
+Router – urządzenie sieciowe pracujące w trzeciej warstwie modelu OSI. Służy do łączenia różnych sieci komputerowych (różnych w sensie informatycznym, czyli np. o różnych klasach, maskach itd.), pełni więc rolę węzła komunikacyjnego. Na podstawie informacji zawartych w pakietach TCP/IP jest w stanie przekazać pakiety z dołączonej do siebie sieci źródłowej do docelowej, rozróżniając ją spośród wielu dołączonych do siebie sieci. Proces kierowania ruchem nosi nazwę trasowania, routingu lub routowania.
+
+Miejska sieć komputerowa, MAN (ang. Metropolitan Area Network) – duża sieć komputerowa, której zasięg obejmuje aglomerację lub miasto. Tego typu sieci używają najczęściej połączeń światłowodowych do komunikacji pomiędzy wchodzącymi w jej skład rozrzuconymi sieciami LAN.
+
+Most lub mostek (ang. bridge) – urządzenie łączące segmenty sieci dokonując filtrowania ruchu sieciowego. Sieci podłączone do mostu mogą korzystać z różnych fizycznych i logicznych protokołów łącza.
+
+Sieć WAN (z ang. Wide Area Network, rozległa sieć komputerowa) – sieć komputerowa znajdująca się na obszarze wykraczającym poza miasto, kraj, kontynent.
+
+Ethernet – technika, w której zawarte są standardy wykorzystywane w budowie głównie lokalnych sieci komputerowych. Obejmuje ona specyfikację przewodów oraz przesyłanych nimi sygnałów. Ethernet opisuje również format ramek i protokoły z dwóch najniższych warstw Modelu OSI.
+
+Skrętka – rodzaj kabla sygnałowego służącego do przesyłania informacji, który zbudowany jest z jednej lub więcej par skręconych ze sobą żył w celu eliminacji wpływu zakłóceń elektromagnetycznych oraz zakłóceń wzajemnych, zwanych przesłuchami.
+
+Wi-Fi – potoczne określenie zestawu standardów stworzonych do budowy bezprzewodowych sieci komputerowych. Szczególnym zastosowaniem Wi-Fi jest budowanie sieci lokalnych (LAN) opartych na komunikacji radiowej, czyli WLAN. Zasięg od kilku metrów do kilku kilometrów i przepustowości sięgającej 300 Mb/s, transmisja na dwóch kanałach jednocześnie.
+
+Interferencja (łac. inter – między + ferre – nieść) – zjawisko powstawania nowego, przestrzennego rozkładu amplitudy fali (wzmocnienia i wygaszenia) w wyniku nakładania się (superpozycji fal) dwóch lub więcej fal. Warunkiem trwałej interferencji fal jest ich spójność, czyli korelacja faz i równość częstotliwości.
+
+Model OSI (pełna nazwa ISO OSI RM, ang. ISO Open Systems Interconnection Reference Model – model odniesienia łączenia systemów otwartych) lub OSI – standard zdefiniowany przez ISO oraz ITU-T opisujący strukturę komunikacji sieciowej.
+
+Kapsułkowanie danych - model OSI opisuje drogę danych od aplikacji w systemie jednej stacji roboczej do aplikacji w systemie drugiej. Przed wysłaniem dane wraz z przekazywaniem do niższych warstw sieci zmieniają swój format, co nosi nazwę procesu kapsułkowania (enkapsulacji).
+
+Model OSI definiuje jakie zadania oraz rodzaje danych mogą być przesyłane między warstwami w całkowitym oderwaniu od ich fizycznej i algorytmicznej realizacji, czyli zakłada istnienie warstw abstrakcji w medium transmisyjnym, sprzęcie oraz oprogramowaniu i wokół tych warstw orientuje specyficzne dla nich protokoły, realizowane przez te protokoły usługi świadczone wyższym warstwom oraz posiadane interfejsy, umożliwiające dostęp do warstwy przez procesy z innych warstw. Mimo iż każda z warstw sama nie jest funkcjonalna, to możliwe jest projektowanie warstwy w całkowitym oderwaniu od pozostałych. Jest to realne, jeżeli wcześniej zdefiniuje się protokoły wymiany danych pomiędzy poszczególnymi warstwami.
+	→ Wyróżniamy trzy warstwy górne, czyli warstwę aplikacji, prezentacji i sesji. Ich  zadaniem jest współpraca z oprogramowaniem realizującym zadania zlecane przez użytkownika systemu komputerowego. Tworzą one pewien interfejs, który pozwala na komunikację z warstwami niższymi. Ta sama warstwa realizuje dokładnie odwrotne zadanie w zależności od kierunku przepływu danych. Przyjmijmy, że dane przepływają w dół Modelu OSI, kiedy płyną od użytkownika do urządzeń sieciowych oraz w górę w przeciwnym wypadku:
+		→ Warstwa 7: aplikacji
+		→ Warstwa 6: prezentacji
+		→ Warstwa 5: sesji
+	→ Najniższe warstwy zajmują się odnajdywaniem odpowiedniej drogi do celu, gdzie ma być przekazana konkretna informacja. Dzielą również dane na odpowiednie dla urządzeń sieciowych pakiety określane często skrótem PDU (ang. Protocol Data Unit). Dodatkowo zapewniają weryfikację bezbłędności przesyłanych danych. Ważną cechą warstw dolnych jest całkowite ignorowanie sensu przesyłanych danych. Dla warstw dolnych nie istnieją aplikacje, tylko pakiety/ramki danych. Warstwy dolne to warstwa transportowa, sieciowa, łącza danych oraz fizyczna.
+		→ Warstwa 4: transportowa
+		→ Warstwa 3: sieciowa
+		→ Warstwa 2: łącza danych
+		→ Warstwa 1: fizyczna
+
+Model TCP/IP (ang. Transmission Control Protocol/Internet Protocol) – teoretyczny model warstwowej struktury protokołów komunikacyjnych. Model TCP/IP został stworzony w latach 70. XX wieku w DARPA, aby pomóc w tworzeniu odpornych na atak sieci komputerowych. Potem stał się podstawą struktury Internetu.
+
+Model OSI 				Model TCP/IP
+→ Aplikacji 				→ Aplikacji
+→ Prezentacji
+→ Sesji
+→ Transportowa 		→ Transportowa
+→ Sieciowa 				→ Internetu
+→ Łącza danych 		→ Dostępu do sieci
+→ Fizyczna
+
+W momęcie w którym coś tam cos tam cos tam cos tam coś tam... (Profesor mówi za szybko.).
+
+Gniazdo w telekomunikacji (ang. socket) – pojęcie abstrakcyjne reprezentujące dwukierunkowy punkt końcowy połączenia. Dwukierunkowość oznacza możliwość wysyłania i odbierania danych. Wykorzystywane jest przez aplikacje do komunikowania się przez sieć w ramach komunikacji międzyprocesowej.
+Gniazdo posiada trzy główne właściwości:
+	→ typ gniazda identyfikujący protokół wymiany danych
+	→ lokalny adres (np. adres IP, IPX, czy Ethernet)
+	→ opcjonalny lokalny numer portu identyfikujący proces, który wymienia dane przez gniazdo (jeśli typ gniazda pozwala używać portów)
+Gniazdo może posiadać (na czas trwania komunikacji) dwa dodatkowe atrybuty:
+	→ adres zdalny (np. adres IP, IPX, czy Ethernet)
+	→ opcjonalny numer portu identyfikujący zdalny proces (jeśli typ gniazda pozwala używać portów)
+
+HTTP (ang. Hypertext Transfer Protocol) – protokół przesyłania dokumentów hipertekstowych to protokół sieci WWW (ang. World Wide Web). Obecną definicję HTTP stanowi RFC 2616 ↓. Za pomocą protokołu HTTP przesyła się żądania udostępnienia dokumentów WWW i informacje o kliknięciu odnośnika oraz informacje z formularzy. Zadaniem stron WWW jest publikowanie informacji – natomiast protokół HTTP właśnie to umożliwia.
+Metody HTTP:
+		→ GET – pobranie zasobu wskazanego przez URI, może mieć postać warunkową jeśli w 					nagłówku występują pola warunkowe takie jak "If-Modified-Since"
+		→ HEAD – pobiera informacje o zasobie, stosowane do sprawdzania dostępności zasobu
+		→ PUT – przyjęcie danych przesyłanych od klienta do serwera, najczęściej aby 					zaktualizować wartość encji
+		→ POST – przyjęcie danych przesyłanych od klienta do serwera (np. wysyłanie zawartości 					formularzy)
+		→ DELETE – żądanie usunięcia zasobu, włączone dla uprawnionych użytkowników
+		→ OPTIONS – informacje o opcjach i wymaganiach istniejących w kanale komunikacyjnym
+		→ TRACE – diagnostyka, analiza kanału komunikacyjnego
+		→ CONNECT – żądanie przeznaczone dla serwerów pośredniczących pełniących funkcje 					tunelowania
+   	→  PATCH – aktualizacja części danych
+
+Domain Name System (DNS, pol. „system nazw domenowych”) – system serwerów, protokół komunikacyjny oraz usługa obsługująca rozproszoną bazę danych adresów sieciowych. Pozwala na zamianę adresów znanych użytkownikom Internetu na adresy zrozumiałe dla urządzeń tworzących sieć komputerową.
+
+HTTP 404 lub Not Found - kod błędu odpowiedzi HTTP wskazującego na to, że klient jest w stanie komunikować się z serwerem, ale ten nie może znaleźć żądanego pliku, lub jest on skonfigurowany, aby nie spełnić żądania i nie wyświetlać informacji.
+
+FTP, protokół transferu plików (ang. File Transfer Protocol) – protokół komunikacyjny typu klient-serwer wykorzystujący protokół TCP według modelu TCP/IP (krótko: połączenie TCP), umożliwiający dwukierunkowy transfer plików w układzie serwer FTP–klient FTP.
+
+POP3 Post Office Protocol (POP) – protokół internetowy z warstwy aplikacji pozwalający na odbiór poczty elektronicznej ze zdalnego serwera do lokalnego komputera poprzez połączenie TCP/IP.
+
+TLS (ang. Transport Layer Security) – przyjęte jako standard w Internecie rozwinięcie protokołu SSL (ang. Secure Socket Layer), zaprojektowanego pierwotnie przez Netscape Communications. TLS zapewnia poufność i integralność transmisji danych, a także uwierzytelnienie serwera, a niekiedy również klienta. Opiera się na szyfrowaniu asymetrycznym oraz certyfikatach X.509.
+
+Transmission Control Protocol (TCP) – połączeniowy, niezawodny, strumieniowy protokół komunikacyjny wykorzystywany do przesyłania danych pomiędzy procesami uruchomionymi na różnych maszynach, będący częścią szeroko wykorzystywanego obecnie stosu TCP/IP – korzysta z usług protokołu IP do wysyłania i odbierania danych oraz ich fragmentacji wtedy, gdy jest to konieczne. Protokół TCP operuje w warstwie transportowej modelu OSI. Opracowano go na podstawie badań Vintona Cerfa oraz Roberta Kahna.
+TCP jest protokołem działającym w trybie klient-serwer. Serwer oczekuje na nawiązanie połączenia na określonym porcie. Klient inicjuje połączenie do serwera.
+./pasted_image005.png
+
+UDP (ang. User Datagram Protocol – protokół pakietów użytkownika) – jeden z protokołów internetowych. UDP stosowany jest w warstwie transportowej modelu OSI. Nie gwarantuje dostarczenia datagramu.
+Jest to protokół bezpołączeniowy, więc nie ma narzutu na nawiązywanie połączenia i śledzenie sesji (w przeciwieństwie do TCP). Nie ma też mechanizmów kontroli przepływu i retransmisji. Korzyścią płynącą z takiego uproszczenia budowy jest szybsza transmisja danych i brak dodatkowych zadań, którymi musi zajmować się host posługujący się tym protokołem. Z tych względów UDP jest często używany w takich zastosowaniach jak wideokonferencje, strumienie dźwięku w Internecie i gry sieciowe, gdzie dane muszą być przesyłane możliwie szybko, a poprawianiem błędów zajmują się inne warstwy modelu OSI. Przykładem może być VoIP lub protokół DNS.
+
+IPv4 (ang. Internet Protocol version 4) – czwarta wersja protokołu komunikacyjnego IP przeznaczonego dla Internetu. Identyfikacja hostów w IPv4 opiera się na adresach IP. Dane przesyłane są w postaci standardowych datagramów. Wykorzystanie IPv4 jest możliwe niezależnie od technologii łączącej urządzenia sieciowe – sieć telefoniczna, kablowa, radiowa, itp. IPv4 znajduje się obecnie w powszechnym użyciu. Dostępna jest również nowsza wersja – IPv6. Dokładny opis czwartej wersji protokołu IP znajduje się w RFC 791 ↓. W modelu TCP/IP protokół IPv4 znajduje się w warstwie sieciowej.
+
+maska sieciowa ⇒ maska podsieci  - ile bitów adresu ip przeznaczoIstnieje pula prywatnych adresów IP. Mogą być one wykorzystane tylko w sieciach lokalnych. Infrastruktura Internetu ignoruje te adresy IP. IANA (Internet Assigned Numbers Authority) zarezerwował następujące trzy bloki przestrzeni adresów IP dla prywatnych sieci:
+
+	10.0.0.0 - 10.255.255.255 – dla sieci prywatnych dawniej z klasy A (maska zakresu: 255.0.0.0)
+	172.16.0.0 - 172.31.255.255 – dla sieci prywatnych dawniej z klasy B (maska zakresu: 255.240.0.0)
+	192.168.0.0 - 192.168.255.255 – dla sieci prywatnych dawniej z klasy C (maska zakresu: 255.255.0.0)
+
+Adresy prywatne można wykorzystywać w routerach w sieciach lokalnych, ale nie działają one w publicznej części internetu. Jeżeli administrator sieci lokalnej przydzieli swoim komputerom adresy IP z puli prywatnej, to routery mogą rozpoznać kiedy komputery chcą się łączyć z internetem. W takiej sytuacji brama internetowa wykorzystuje translację adresów sieciowych, która pozwala na łączenie się z internetem komputerom nie posiadającym własnych publicznych adresów IP. Komputery z adresami prywatnymi nie mogą pełnić roli serwerów sieciowych w Internecie chyba, że posłużymy się techniką maskowania adresów docelowych (DNAT).nych jest na adres sieci
+Istnieje pula prywatnych adresów IP. Mogą być one wykorzystane tylko w sieciach lokalnych. Infrastruktura Internetu ignoruje te adresy IP. IANA (Internet Assigned Numbers Authority) zarezerwował następujące trzy bloki przestrzeni adresów IP dla prywatnych sieci:
+	→ 10.0.0.0 - 10.255.255.255 – dla sieci prywatnych dawniej z klasy A (maska zakresu: 255.0.0.0)
+	→ 172.16.0.0 - 172.31.255.255 – dla sieci prywatnych dawniej z klasy B (maska zakresu: 			255.240.0.0)
+	→ 192.168.0.0 - 192.168.255.255 – dla sieci prywatnych dawniej z klasy C (maska zakresu: 		255.255.0.0)
+Adresy prywatne można wykorzystywać w routerach w sieciach lokalnych, ale nie działają one w publicznej części internetu. Jeżeli administrator sieci lokalnej przydzieli swoim komputerom adresy IP z puli prywatnej, to routery mogą rozpoznać kiedy komputery chcą się łączyć z internetem. W takiej sytuacji brama internetowa wykorzystuje translację adresów sieciowych, która pozwala na łączenie się z internetem komputerom nie posiadającym własnych publicznych adresów IP. Komputery z adresami prywatnymi nie mogą pełnić roli serwerów sieciowych w Internecie chyba, że posłużymy się techniką maskowania adresów docelowych (DNAT).
+
+Internet rzeczy (również Internet przedmiotów, ang. Internet of Things – IoT) – koncepcja, wedle której jednoznacznie identyfikowalne przedmioty mogą pośrednio albo bezpośrednio gromadzić, przetwarzać lub wymieniać dane za pośrednictwem sieci komputerowej. Do tego typu przedmiotów zaliczają się między innymi urządzenia gospodarstwa domowego, artykuły oświetleniowe i grzewcze, urządzenia noszone (wearables).
+
+np
+	192.1680.10IPv6 (ang. Internet Protocol version 6) – protokół komunikacyjny, będący następcą protokołu IPv4, do którego opracowania przyczynił się w głównej mierze problem małej, kończącej się liczby adresów IPv4. Podstawowymi zadaniami nowej wersji protokołu jest zwiększenie przestrzeni dostępnych adresów poprzez zwiększenie długości adresu z 32-bitów do 128-bitów, uproszczenie nagłówka protokołu oraz zapewnienie jego elastyczności poprzez wprowadzenie rozszerzeń, a także wprowadzenie wsparcia dla klas usług, uwierzytelniania oraz spójności danych. Protokół jest znany także jako IP Next Generation oraz IPng.
+	wp.pl ⇒ 212.77.98.9
+	1)DNS, HTTP
+	2)TCP, IP, ETH
+
+IPv6 (ang. Internet Protocol version 6) – protokół komunikacyjny, będący następcą protokołu IPv4, do którego opracowania przyczynił się w głównej mierze problem małej, kończącej się liczby adresów IPv4. Podstawowymi zadaniami nowej wersji protokołu jest zwiększenie przestrzeni dostępnych adresów poprzez zwiększenie długości adresu z 32-bitów do 128-bitów, uproszczenie nagłówka protokołu oraz zapewnienie jego elastyczności poprzez wprowadzenie rozszerzeń, a także wprowadzenie wsparcia dla klas usług, uwierzytelniania oraz spójności danych. Protokół jest znany także jako IP Next Generation oraz IPng.
+
+Domena najwyższego poziomu (ang. TLD – Top-Level Domain) – domena internetowa, powyżej której nie istnieją żadne inne domeny w systemie DNS. Są one tworzone i zarządzane przez IANA i ICANN.
+
+Pamięć podręczna (ang. cache) – mechanizm, w którym część spośród danych zgromadzonych w źródłach o długim czasie dostępu i niższej przepustowości jest dodatkowo przechowywana w pamięci o lepszych parametrach.
+
+OpenDNS – darmowe serwery DNS. Dzięki dużej bazie adresów umożliwia szybsze wczytywanie stron oraz zabezpiecza przed phishingiem. Dodatkowo umożliwia zablokowanie dostępu np. do stron pornograficznych lub z przemocą. Korzysta z filtra treści oraz czarnej listy (ang. blacklist).
+
+Google Public DNS – darmowe serwery DNS udostępniane przez firmę Google. Głównymi cechami tej usługi jest skrócenie czasu potrzebnego na wczytywanie stron internetowych poprzez prefetching rekordów DNS oraz łatwe w zapamiętaniu adresy.
+
+Plik hosts – plik konfiguracyjny systemu operacyjnego służący do sztywnego mapowania nazw domenowych na adresy IP.
+
+tcp/ip SPRAWDZIAN
+
+DHCP (Dynamic Host Configuration Protocol) - protokół dynamicznie przydzielającym każdemu komputerowi adres IP, a także parametry konfiguracji TCP/IP – bramę domyślną, maskę podsieci, adresy serwerów DNS i inne.
+
+MAC (ang. Media Access Control) – akronim posiadający szereg znaczeń w elektronice i informatyce:
+		→ podwarstwa warstwy łącza danych (ang. Data Link Layer, DLL) w modelu OSI
+		→ sprzętowy adres karty sieciowej Ethernet i Token Ring, unikatowy w skali 		światowej, nadawany przez producenta danej karty podczas produkcji.
+	Podwarstwa warstwy łącza danych modelu OSI pełni następujące funkcje:
+		→ kontrola dostępu do medium transmisyjnego
+		→ ochrona przed błędami
+		→ adresowanie celu
+		→ kontrola przepływu pomiędzy stacją końcową a urządzeniami sieciowymi
+		→ filtrowanie ramek w celu redukcji propagacji w sieciach LAN i MAN.
+
+Kryptografia klucza publicznego (nazywana również kryptografią asymetryczną) to rodzaj kryptografii, w którym używa się zestawów dwu lub więcej powiązanych ze sobą kluczy, umożliwiających wykonywanie różnych czynności kryptograficznych. Jeden z kluczy może być udostępniony publicznie bez utraty bezpieczeństwa danych zabezpieczanych tym kryptosystemem.
+
+RSA – jeden z pierwszych i obecnie najpopularniejszych asymetrycznych algorytmów kryptograficznych z kluczem publicznym, zaprojektowany w 1977 przez Rona Rivesta, Adi Szamira oraz Leonarda Adlemana. Pierwszy algorytm, który może być stosowany zarówno do szyfrowania jak i do podpisów cyfrowych. Bezpieczeństwo szyfrowania opiera się na trudności faktoryzacji dużych liczb złożonych. Jego nazwa pochodzi od pierwszych liter nazwisk jego twórców.
+
+Pretty Good Privacy (PGP) – narzędzie do szyfrowania poczty elektronicznej.
+
+DES (ang. Data Encryption Standard) – symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie ówczesnego Narodowego Biura Standardów USA (obecnie NIST). Od 1976 do 2001 roku stanowił standard federalny UFunkcja skrótu, funkcja mieszająca lub funkcja haszująca – funkcja przyporządkowująca dowolnie dużej liczbie krótką, zawsze posiadającą stały rozmiar, niespecyficzną, quasi-losową wartość, tzw. skrót nieodwracalny.
+
+W informatyce funkcje skrótu pozwalają na ustalenie krótkich i łatwych do weryfikacji sygnatur dla dowolnie dużych zbiorów danych. Sygnatury mogą chronić przed przypadkowymi lub celowo wprowadzonymi modyfikacjami danych (sumy kontrolne), a także mają zastosowania przy optymalizacji dostępu do struktur danych w programach komputerowych (tablice mieszające).SA, a od roku 1981 standard ANSI dla sektora prywatnego (znany jako Data Encryption Algorithm). Od kilku lat uznawany jest za algorytm niezapewniający odpowiedniego bezpieczeństwa, głównie ze względu na niewielką długość klucza, która sprawia, że jest bardzo podatny na atak siłowy. W 2001 roku w USA został zastąpiony w ramach standardu federalnego przez AES. Jest jednym z najlepiej przeanalizowanych algorytmów szyfrujących.
+
+Hash - wynik działania funkcji skrótu, pojęcie używane w kryptografii, identyfikator plików w sieciach P2P.
+
+Funkcja skrótu, funkcja mieszająca lub funkcja haszująca – funkcja przyporządkowująca dowolnie dużej liczbie krótką, zawsze posiadającą stały rozmiar, niespecyficzną, quasi-losową wartość, tzw. skrót nieodwracalny. W informatyce funkcje skrótu pozwalają na ustalenie krótkich i łatwych do weryfikacji sygnatur dla dowolnie dużych zbiorów danych. Sygnatury mogą chronić przed przypadkowymi lub celowo wprowadzonymi modyfikacjami danych (sumy kontrolne), a także mają zastosowania przy optymalizacji dostępu do struktur danych w programach komputerowych (tablice mieszające).
