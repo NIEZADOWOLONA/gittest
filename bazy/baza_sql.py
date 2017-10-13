@@ -8,13 +8,15 @@ import sqlite3
 from dane import *  
 
 def main(args):
-    con = sqlite3.connect('pracownicy.sqlite3')
-    cur = con.cursor() 
+    con = sqlite3.connect('pracownicy.sqlite3') # połączenie z bazą
+    cur = con.cursor() #utworzenie kursora(gdy coś robię w bazie)
     
-    # tworzenie tabel
+    # tworzenie bazy danych
     with open('pracownicy_z1.sql', 'r') as plik:
         skrypt = plik.read()
         cur.executescript(skrypt)
+    
+    #pobieranie danych do bazy
         
     pracownicy = dane_z_pliku('pracownicy.txt')
     pracownicy = wyczysc_dane(pracownicy, 5)
@@ -22,8 +24,10 @@ def main(args):
     premia = wyczysc_dane(premia, 1)
     dzial = dane_z_pliku('dział.txt')
     
+    #wypełnianie bazy danymi
+    
     print(pracownicy[0])
-    cur.executemany('INSERT INTO premia VALUES(?, ?)', premia) # ?(stanowisko), ?(premia) bo premia ma 2 elementy
+    cur.executemany('INSERT INTO premia VALUES(?, ?)', premia) # ?(stanowisko), ?(premia) bo premia ma 2 kolumny
     cur.executemany('INSERT INTO dzial VALUES(?, ?, ?)', dzial)
     cur.executemany('INSERT INTO pracownicy(id, nazwisko, imie, stanowisko, data_zatr, placa, id_dzial) VALUES(?, ?, ?, ?, ?, ?, ?)', pracownicy)
     

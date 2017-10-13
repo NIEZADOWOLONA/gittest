@@ -12,7 +12,7 @@ def dane_z_pliku(plik, delimiter='\t'): #delimiter='\t' - inne dane
             dane.append(rekord)
     return dane
     
-def wyczysc_dane(dane, pole):
+def wyczysc_dane(dane, pole): # w tym wypadku formatowanie kwot (usunięcie jego)
     for i, rekord in enumerate(dane):
          el = rekord[pole]
          el = el.replace('zł','') 
