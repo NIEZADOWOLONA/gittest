@@ -115,3 +115,13 @@ def edytuj(pid):
             break
     form = DodajForm(obj=p)
     return render_template("edytuj.html", form=form, radio=list(form.odpok))
+
+@app.route('/usun/<int:pid>', methods=['GET', 'POST'])
+def usun(pid):
+    """Usunięcie pytania o identyfikatorze pid"""
+    p = get_or_404(pid)
+    if request.method == 'POST':
+        flash('Usunięto pytanie {0}'.format(p.pytanie), 'sukces')
+        p.delete_instance(recursive=True)
+        return redirect(url_for('index'))
+    return render_template("pytanie_usun.html", pytanie=p)
