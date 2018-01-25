@@ -1,3 +1,5 @@
+#ifndef ULAMEK_H
+#define ULAMEK_H
 /*
  * plik nagłówkowy klasy Ulamek
  * 
@@ -15,4 +17,4 @@ public:
     int get_m();
     void skracaj();
 };
-
+#endif
