@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-25T11:58:51+01:00
+
+====== stos, kolejka, lista, drzewo ======
+Created czwartek 25 styczeń 2018
+
+struktury o dostępie "szeregowym" w określonej kolejności a nie swobodnie
+
+struktura danych - pojemnik na dane - zmienna, tablica
+podstawowe struktury danych
+→ stos - linowo uporządkowane dane, dostępny jest ostatni element, jak ostatnia książka na stosie książek, wieszchołek stosu stack pointer, architektura LIFO, Last In First Out, zapisane w określonym porządku, liniowe uporządkowane danych, pusch() dodaj na szyt, pop() usuń wieszchołek, size() liczba elementów, empty() tru jak stos jest pusty
+
+→ kolejka - linowa struktura danych, architektura FIFO, First In First Out, przeciwieństwo stosu, głowa kolejki - pierwszy element kolejki, ogon kolejki - pierwsze wolne miejsce w kolejce
+
+→ lista - uzupełniana dynamicznie, struktura danych sużąca do przechowywania nieznanej z góry ilości informacji tego samego typu, zkłada się z węzów które zawierają dane przechowywane w liści oraz wskaźnik do kolejnego elementu : lista jednokierunkowa - poruszanie się linowe w jednym kierunku, lista z wartownikiem/lista cykliczna - zamknięty cyfr zamiast struktury liniowej, można poruszac się cyklicznie, struktura o dostępie "szeregowym" w określonej kolejności a nie swobodnie
+
+→ drzewo binarne - hiererchiczna struktura danych, elementy - węzły/wieszchołki, każdy węzeł ma co najwyżej dwa następniki (binarny - dwójkowy), metoda dziel i zwyciężaj podziel na mniejsze problemy i rozwiąż je a później połącz, reguła drzewa: to co na lewo od rodzica mniejsze od niego po prawej większa, korzeń - pierwsza wartość bez rodziców - sierota, bardzo szybkie przeszukiwanie dzrzewa, 
+

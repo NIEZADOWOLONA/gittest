@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-18T11:59:39+01:00
+
+====== OBIEKTY ======
+Created czwartek 18 styczeń 2018
+
+OOP - programowanie obiektowe
+
+klasa - szablon opisujący obiekt, schemat obiektu
+obiekt - instancja klasy
+funkcja = metoda
+każda klasa ma bezpośredni dostęp do swoich właściwości
+
+**Klasa  nowy typ danych**
+
+Konstruktor - taka sama nazwa co klasa, metoda specjalna, konstruktor zwraca obiekty typu ułamek, nie określamy typu zwracanej wartości
+

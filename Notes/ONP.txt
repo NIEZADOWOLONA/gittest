@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T13:38:51+01:00
+
+====== ONP ======
+Created wtorek 30 styczeń 2018
+
+Odwrotna notacja polska (ONP, ang. reverse Polish notation, RPN) – sposób zapisu wyrażeń arytmetycznych, w którym znak wykonywanej operacji umieszczony jest po operandach (zapis postfiksowy), a nie pomiędzy nimi jak w konwencjonalnym zapisie algebraicznym (zapis infiksowy) lub przed operandami jak w zwykłej notacji polskiej (zapis prefiksowy). Zapis ten pozwala na całkowitą rezygnację z użycia nawiasów w wyrażeniach, jako że jednoznacznie określa kolejność wykonywanych działań.
+
+2 + 3 ===> 2 3 +
+2 - 3 ===> 2 3 -
+4 * (2 + 3) ===> 4 2
+4 * 2 + 3 ===> 4 2 * 3 +
+4 / (6 - 3) ===> 4 6 3 - /
+(2 - 7) * 3 + (14 + 3) * 4) / 2 ==> 2 7 - 3 * 14 3 +  4 * +  2 /
+operant - wartość numeryczna
+operator - znak (+ - * /)znak odnosi się do dwóch poprzednich
+pobieraj kolejne 
+
