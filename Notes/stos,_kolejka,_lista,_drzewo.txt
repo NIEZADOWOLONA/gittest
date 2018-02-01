@@ -13,7 +13,9 @@ podstawowe struktury danych
 
 → kolejka - linowa struktura danych, architektura FIFO, First In First Out, przeciwieństwo stosu, głowa kolejki - pierwszy element kolejki, ogon kolejki - pierwsze wolne miejsce w kolejce
 
-→ lista - uzupełniana dynamicznie, struktura danych sużąca do przechowywania nieznanej z góry ilości informacji tego samego typu, zkłada się z węzów które zawierają dane przechowywane w liści oraz wskaźnik do kolejnego elementu : lista jednokierunkowa - poruszanie się linowe w jednym kierunku, lista z wartownikiem/lista cykliczna - zamknięty cyfr zamiast struktury liniowej, można poruszac się cyklicznie, struktura o dostępie "szeregowym" w określonej kolejności a nie swobodnie
+→ lista - uzupełniana dynamicznie, struktura danych sużąca do przechowywania nieznanej z góry ilości informacji tego samego typu, składa się z wartości i wskaźników/węzów które zawierają dane przechowywane w liści oraz wskaźnik do kolejnego elementu : lista jednokierunkowa - poruszanie się linowe w jednym kierunku, lista z wartownikiem/lista cykliczna - zamknięty cyfr zamiast struktury liniowej, można poruszac się cyklicznie, struktura o dostępie "szeregowym" w określonej kolejności a nie swobodnie,
+głowa listy - wskaźnik który wskazuje na pierwszy element listy, 
+ogon - wskaźnik do ostatniej wartości listy ((lista dwu kierunkowa )jeżeli mamy 50 elementów w liście a mamy znaleźć 40 możemy się cofać i łatwiej znaleźć element od tyłu )
 
 → drzewo binarne - hiererchiczna struktura danych, elementy - węzły/wieszchołki, każdy węzeł ma co najwyżej dwa następniki (binarny - dwójkowy), metoda dziel i zwyciężaj podziel na mniejsze problemy i rozwiąż je a później połącz, reguła drzewa: to co na lewo od rodzica mniejsze od niego po prawej większa, korzeń - pierwsza wartość bez rodziców - sierota, bardzo szybkie przeszukiwanie dzrzewa, 
 

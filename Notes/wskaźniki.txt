@@ -5,5 +5,6 @@ Creation-Date: 2018-01-25T13:04:23+01:00
 ====== wskaźniki ======
 Created czwartek 25 styczeń 2018
 
+wkaźnik - zmienna zawiera adres komórki
 *- odczytuje adres z komórki, znajduje komórke z danym adresem w ram i odczytuje jej wartość
 & - przekazuje drukuje adres pierwszej komórki
