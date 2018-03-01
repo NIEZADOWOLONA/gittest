@@ -2,8 +2,8 @@
 #include "drzewo.hpp"
 
 using namespace std;
-
-Wezel* stworzWezel(int wartosc) {
+    
+    Drzewo::stworzWezel(int wartosc) {
     Wezel *nowyWezel = new Wezel;
     nowyWezel->wartosc = wartosc;
     nowyWezel->lewy = NULL;

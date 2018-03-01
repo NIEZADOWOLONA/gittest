@@ -12,9 +12,8 @@ int main(int argc, char **argv) {
 	drzewo.dodajWezel(30);
 	drzewo.dodajWezel(16);
 	drzewo.dodajWezel(9);
-    
-    cout << "Posortowane drzewo (niemalejąco): " << endl;
-    drzewo.wyswietlRosnaco();
+    drzewo.wyswietlRosnaco(korzen);
+    drzewo.wyswietlMalejaco(korzen);
 
 	return 0;
 }

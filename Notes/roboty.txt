@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-01T11:54:35+01:00
+
+====== roboty ======
+Created czwartek 01 marzec 2018
+
+F - dodaj
+delete, backspace - usun
+c - czyszczenie planszy
+e - dodaj wroga
+g - nowa generacja

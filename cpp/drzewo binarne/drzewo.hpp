@@ -14,8 +14,9 @@ class Drzewo {
     public:
         Drzewo ();
         ~Drzewo ();
-        void dodajWezel(Wezel *wezel, int);
+        void dodajWezel(int);
         void wyswietlRosnaco(Wezel *wezel);
+        void wyswietlMalejaco(Wezel *wezel);
 };
 
 #endif

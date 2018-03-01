@@ -5,6 +5,9 @@ Creation-Date: 2018-01-18T13:01:50+01:00
 ====== Home Sweet Home ======
 Created czwartek 18 styczeń 2018
 
-napisz kółko krzyżyk
-metoda skracaj w klasie ulamek
-void - ma niczego nie zwracać
+
+struktury dynamiczne
+tworzenie klas
+ cmd - konsola
+napisz python
+jeżeli nie ma virtualenv zainstaluj przez pip install
