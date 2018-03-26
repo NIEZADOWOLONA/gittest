@@ -11,3 +11,4 @@ tworzenie klas
  cmd - konsola
 napisz python
 jeżeli nie ma virtualenv zainstaluj przez pip install
+**funkcja wstaw z listy !!!!**
